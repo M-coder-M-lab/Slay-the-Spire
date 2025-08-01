@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+import '../styles/index.css'
+---
+
+<script>
+  import '../components/slay-map-demo.js'
+</script>
+
+<Layout title="Map demo from Slay the Web">
+  <div class="Container">
+		<p><a class="Button" href="/">&larr; Menu</a></p>
+    <p>Here you can play around with the function used to generate the map in Slay the Web.</p>
+    <slay-map-demo></slay-map-demo>
+  </div>
+</Layout>
+
+<style>
+  slay-map-demo {
+    display: flex;
+    > .Box {
+      flex: 25rem;
+    }
+  }
+  slay-map {
+    min-height: calc(100vh - 5rem);
+  }
+</style>
